@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Asap:400,700);
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,300,700);
+
+body{
+    background-color: #e6e6e6;
+}
+.container{
+    max-width: 1320px;
+}
+.content{
+    background: #fff;
+}
+.header-sticky{
+    background-color: #ed1c24;
+    padding: 20px;
+    font-weight: bold;
+    font-family: "Dosis",Helvetica, Arial, sans-serif;
+}
+a.header-logo{
+    margin-left: 15px;
+}
+.header-sticky>ul.main-menu{
+    color: #ffffff;
+}
+.main-menu>ul>li{
+    display: inline-table;
+}
+.main-menu>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+.main-menu>ul>li>a::after{
+    content: url(../img/down-arrow.png);
+    position: relative;
+    top: -3px;
+    margin: 5px;
+}

@@ -5,3 +5,4 @@ bower_components
 
 *.min.css
 *.min.css.map
+/vendor/

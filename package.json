@@ -1,0 +1,12 @@
+{
+  "name": "quatro_rodas_static",
+  "version": "0.0.1",
+  "description": "Static page based on QuatroRodas's website",
+  "main": "index.html",
+  "scripts": {
+    "minify": ""
+  },
+  "author": "João Lucas Lucchetta",
+  "devDependencies": {
+  }
+}
