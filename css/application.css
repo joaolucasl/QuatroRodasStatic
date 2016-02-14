@@ -1,37 +1,117 @@
 @import url(https://fonts.googleapis.com/css?family=Asap:400,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,300,700);
+body {
+  background-color: #e6e6e6;
+}
 
-body{
-    background-color: #e6e6e6;
+.container {
+  max-width: 1320px;
 }
-.container{
-    max-width: 1320px;
+
+.content {
+  background: #fff;
 }
-.content{
-    background: #fff;
+
+
+/** HEADER **/
+
+.header-sticky {
+  background-color: #ed1c24;
+  font-weight: bold;
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
 }
-.header-sticky{
-    background-color: #ed1c24;
-    padding: 20px;
-    font-weight: bold;
-    font-family: "Dosis",Helvetica, Arial, sans-serif;
+
+.header-logo {
+  display: inline-block;
+  margin-left: 15px;
+  padding-top: 23px;
 }
-a.header-logo{
-    margin-left: 15px;
+
+.header-sticky>ul.main-menu {
+  color: #ffffff;
 }
-.header-sticky>ul.main-menu{
-    color: #ffffff;
+
+.main-menu {
+  margin: 0px;
+  padding: 0px;
 }
-.main-menu>ul>li{
-    display: inline-table;
+
+.main-menu>ul {
+  margin: 0px;
+  padding: 0px;
 }
-.main-menu>ul>li>a{
-    color: white;
-    text-decoration: none;
+
+.main-menu>ul>li {
+  display: inline-table;
+  color: white;
+  padding: 35px 12px 30px 12px;
+  margin: 0px;
+  text-transform: uppercase;
 }
-.main-menu>ul>li>a::after{
-    content: url(../img/down-arrow.png);
-    position: relative;
-    top: -3px;
-    margin: 5px;
+
+.main-menu>ul>li:hover {
+  background-color: #242424;
+}
+
+.main-menu>ul>li>a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-menu>ul>li.dropdown>a::after {
+  content: url(../img/down-arrow.png);
+  position: relative;
+  top: -3px;
+  margin: 5px;
+}
+
+
+/** SUBMENU **/
+
+.main-menu>ul>li.dropdown>.submenu {
+  display: none;
+  position: absolute;
+    top: 89px;
+    z-index: 10;
+    left: 0;
+    max-width: 1320;
+    width: 100%;
+  background-color: #242424;
+}
+/**--- Submenu side list --*/
+.submenu-list{
+  background-color: #474747;
+}
+.submenu-list>ul>li{
+  padding: 10px;
+  margin: 0px;
+}
+.submenu-list>ul{
+  list-style-type: none;
+  text-align: right;
+  margin: 0px;
+}
+.submenu-list>ul>li.active{
+  background-color: #242424;
+}
+.submenu-list>ul>li.active::after{
+  content: url(../img/down-arrow.png);
+  position: relative;
+  top: -3px;
+  margin: 5px;
+  transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
+
+}
+
+/** UTILITY CLASSES **/
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
 }

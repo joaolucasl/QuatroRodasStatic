@@ -1,39 +1,72 @@
 <html>
-    <head>
 
-    </head>
-    <body>
+<head>
+
+</head>
+
+<body>
   <div class="container header-sticky">
-        <a href="/" class="header-logo"><img src="img/quatro-rodas-logo.png">
+    <h1 class="header-logo">
+      <a href="/" ><img src="img/quatro-rodas-logo.png">
       </a>
-      <nav class="main-menu  u-pull-right">
+    </h1>
+    <nav class="main-menu  u-pull-right">
       <ul>
         <li class="dropdown">
-            <a href="">
+          <a href="#">
                 CARROS
-            </a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="toggle-dropdown">
+          </a>
+
+        </li>
+        <li class="dropdown">
+          <a href="#" class="toggle-dropdown">
                 TESTES
-            </a>
-          </li>
+          </a>
+          <nav class="submenu">
+            <div class="row">
+              <div class="three columns submenu-list">
+                <ul>
+                  <li class="active">A</li>
+                  <li>B</li>
+                </ul>
+              </div>
+              <div class="nine columns"></div>
+            </div>
+          </nav>
+        </li>
+        <li>
+          <a href="#">
+            Assine
+          </a>
+        </li>
       </ul>
-      </nav>
+    </nav>
 
-        </div>
+  </div>
 
-        <div class="container content">
-            <h1>Oi</h1>
-            <span>Hello</span>
-        </div>
-    </body>
-    <!-- Stylesheet and JS loads -->
+  <div class="container content">
+    <h1>Oi</h1>
+    <span>Hello</span>
+  </div>
+</body>
+<!-- Stylesheet and JS loads -->
 <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="css/application.css" rel="stylesheet">
-    <script src="js/jquery.min.js" type="application/javascript"></script>
-    <script src="js/bootstrap.min.js" type="application/javascript"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="css/application.css" rel="stylesheet">
+<script src="js/jquery.min.js" type="application/javascript"></script>
+<script src="js/bootstrap.min.js" type="application/javascript"></script>
+<script>
+  $(document).ready(function () {
+    $('.dropdown').hover(
+      function () {
+        $(this).children('.submenu').slideDown(200);
+      },
+      function () {
+        $(this).children('.submenu').slideUp(200);
+      }
+    );
+  });
+</script>
 
 </html>
