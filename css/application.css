@@ -1,117 +1,126 @@
+
+
 @import url(https://fonts.googleapis.com/css?family=Asap:400,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,300,700);
-body {
-  background-color: #e6e6e6;
+body {font-family: "Asap",Helvetica,Arial,sans-serif;}
+
+.navbar-red {
+	background-color: #ed1c24;
+	border: none;
+	font-family: "Dosis",Helvetica,Arial,sans-serif;
+ }
+
+	.navbar-red ul.main-menu>li>a {
+		color: white;
+		font-weight: bold;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		text-transform: uppercase;
+        font-size: 1.1em;
+	 }
+
+.navbar-red ul.navbar-nav>li>a {background-color: #ed1c24;}
+.navbar-red ul.navbar-nav>li.active>a {background-color: #BA0000;}
+
+
+.navbar-red ul.navbar-nav>li.dropdown.open>a{
+  background-color: #242424;
 }
 
-.container {
+.navbar-red ul.navbar-nav>li.dropdown>a::after {
+		content: url("../img/down-arrow.png");
+		margin-left: 5px;
+	 }
+.navbar-brand {
+  padding: 0px;
+  padding-left: 15px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.dropdown-menu{
+  min-width:auto;
+  border-radius: 0px;
+  border: none;
+  width:100%;
+}
+.top-navbar {
+  height: 80px;
+  position: fixed !important;
   max-width: 1320px;
+  right: 0px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px;
 }
-
-.content {
-  background: #fff;
-}
-
-
-/** HEADER **/
-
-.header-sticky {
-  background-color: #ed1c24;
-  font-weight: bold;
-  font-family: "Dosis", Helvetica, Arial, sans-serif;
-}
-
-.header-logo {
-  display: inline-block;
-  margin-left: 15px;
-  padding-top: 23px;
-}
-
-.header-sticky>ul.main-menu {
-  color: #ffffff;
-}
-
-.main-menu {
-  margin: 0px;
+.submenu{
   padding: 0px;
+  background: #242424;
 }
-
-.main-menu>ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-.main-menu>ul>li {
-  display: inline-table;
-  color: white;
-  padding: 35px 12px 30px 12px;
-  margin: 0px;
-  text-transform: uppercase;
-}
-
-.main-menu>ul>li:hover {
-  background-color: #242424;
-}
-
-.main-menu>ul>li>a {
-  color: white;
-  text-decoration: none;
-}
-
-.main-menu>ul>li.dropdown>a::after {
-  content: url(../img/down-arrow.png);
-  position: relative;
-  top: -3px;
-  margin: 5px;
-}
-
-
-/** SUBMENU **/
-
-.main-menu>ul>li.dropdown>.submenu {
-  display: none;
-  position: absolute;
-    top: 89px;
-    z-index: 10;
-    left: 0;
-    max-width: 1320;
-    width: 100%;
-  background-color: #242424;
-}
-/**--- Submenu side list --*/
 .submenu-list{
   background-color: #474747;
-}
-.submenu-list>ul>li{
-  padding: 10px;
-  margin: 0px;
+  margin: 0;
+  font-family: "Asap",Helvectica,Arial,sans-serif;
+  padding:0px;
 }
 .submenu-list>ul{
-  list-style-type: none;
-  text-align: right;
-  margin: 0px;
+  margin:0;
+  padding:0;
+
 }
-.submenu-list>ul>li.active{
+.submenu-list>ul>li {
+  list-style-type: none;
+  padding: 5px;
+  text-align: right;
+}
+
+.submenu-list>ul>li.active {
   background-color: #242424;
 }
-.submenu-list>ul>li.active::after{
-  content: url(../img/down-arrow.png);
+.submenu-list>ul>li.active>a::after {
+  content: url("../img/down-arrow.png");
+  display: inline-block;
+   transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+}
+.submenu-list>ul>li>a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0 22px;
+}
+
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
   position: relative;
-  top: -3px;
-  margin: 5px;
-  transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg)
-
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
 }
 
-/** UTILITY CLASSES **/
-
-.hide {
-  display: none !important;
-}
-
-.show {
-  display: block !important;
+.content{
+  padding-top: 90px;
 }
