@@ -4,10 +4,22 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,300,700);
 body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 
+.ads-banner{
+  position: fixed;
+  text-align: center;
+  padding: 5px;
+  background-color: #e6e6e6;
+}
+.top-navbar{
+  font-family: "Dosis",Helvetica,Arial,sans-serif;
+  top: 100px;
+}
+.top-wrapper{
+  background-color:
+}
 .navbar-red {
 	background-color: #ed1c24;
 	border: none;
-	font-family: "Dosis",Helvetica,Arial,sans-serif;
  }
 .navbar-red #navbar{
   border-color: transparent;
@@ -172,7 +184,7 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 }
 
 .content{
-  padding-top: 90px;
+  padding-top: 210px;
 }
 @media (max-width: 990px) {
 
