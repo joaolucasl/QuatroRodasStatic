@@ -58,13 +58,14 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 }
 .submenu{
   padding: 0px;
-  background: #242424;
+  background-color: #474747;
 }
 .submenu-list{
   background-color: #474747;
   margin: 0;
   font-family: "Asap",Helvectica,Arial,sans-serif;
   padding:0px;
+  font-size: 15px;
 }
 .submenu-list>ul{
   margin:0;
@@ -82,19 +83,63 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 }
 .submenu-list>ul>li.active>a::after {
   content: url("../img/down-arrow.png");
+  position: absolute;
+  margin: 7px;
   display: inline-block;
    transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
 }
-.submenu-list>ul>li>a {
+.submenu-list>ul>li>a,.section-articles>ul.articles-list>li a {
+  font-family: "Asap", Helvetica, sans-serif;
+  text-transform: none;
+  font-size:15px;
   color: white;
   font-weight: bold;
-  text-decoration: none;
+}
+.submenu-list>ul>li>a{
   padding: 0 22px;
 }
 
+/**--- SUBMENU THUMBNAIL PREVIEW ---**/
+.section-articles{
+    background-color: #242424;
+}
+.section-articles>ul.articles-list>li{
+  padding: 20px;
+}
+.section-articles>ul.articles-list>li a{
+  margin: 0px;
+}
+
+/** SECONDARY MENU **/
+.secondary-menu{
+  background:url("../img/mais-acessados-bg.png") no-repeat;
+  background-color: #242424;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px;
+}
+.secondary-menu>span.section-title{
+  padding-left: 15px;
+  padding-right: 35px;
+  font-size: 14px;
+}
+.secondary-menu>ul.menu-list{
+   display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+.secondary-menu>.menu-list>li{
+  list-style-type: none;
+  display: inline-block;
+}
+.secondary-menu>.menu-list>li>a{
+  color: white;
+  padding: 0px 10px 0px 10px;
+}
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
