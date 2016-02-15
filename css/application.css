@@ -9,6 +9,9 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 	border: none;
 	font-family: "Dosis",Helvetica,Arial,sans-serif;
  }
+.navbar-red #navbar{
+  border-color: transparent;
+}
 
 	.navbar-red ul.main-menu>li>a {
 		color: white;
@@ -21,7 +24,9 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 
 .navbar-red ul.navbar-nav>li>a {background-color: #ed1c24;}
 .navbar-red ul.navbar-nav>li.active>a {background-color: #BA0000;}
-
+ .navbar-red ul.navbar-nav>li>a:hover{
+    background-color: #BA0000;
+  }
 
 .navbar-red ul.navbar-nav>li.dropdown.open>a{
   background-color: #242424;
@@ -168,4 +173,7 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 
 .content{
   padding-top: 90px;
+}
+@media (max-width: 990px) {
+
 }
