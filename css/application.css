@@ -1,68 +1,83 @@
-
-
 @import url(https://fonts.googleapis.com/css?family=Asap:400,700);
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,300,700);
-body {font-family: "Asap",Helvetica,Arial,sans-serif;}
+body {
+  font-family: "Asap", Helvetica, Arial, sans-serif;
+}
 
-.ads-banner{
+.ads-banner {
   position: fixed;
   text-align: center;
   padding: 5px;
   background-color: #e6e6e6;
 }
-.top-navbar{
-  font-family: "Dosis",Helvetica,Arial,sans-serif;
+
+.ads-banner img {
+  display: block;
+  margin: auto;
+}
+
+.top-navbar {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
   top: 100px;
 }
-.top-wrapper{
-  background-color:
-}
+
 .navbar-red {
-	background-color: #ed1c24;
-	border: none;
- }
-.navbar-red #navbar{
+  background-color: #ed1c24;
+  border: none;
+}
+
+.navbar-red #navbar {
   border-color: transparent;
 }
 
-	.navbar-red ul.main-menu>li>a {
-		color: white;
-		font-weight: bold;
-		padding-bottom: 30px;
-		padding-top: 30px;
-		text-transform: uppercase;
-        font-size: 1.1em;
-	 }
+.navbar-red ul.main-menu>li>a {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
 
-.navbar-red ul.navbar-nav>li>a {background-color: #ed1c24;}
-.navbar-red ul.navbar-nav>li.active>a {background-color: #BA0000;}
- .navbar-red ul.navbar-nav>li>a:hover{
-    background-color: #BA0000;
-  }
+.navbar-red ul.navbar-nav>li>a {
+  background-color: #ed1c24;
+}
 
-.navbar-red ul.navbar-nav>li.dropdown.open>a{
+.navbar-red ul.navbar-nav>li.active>a {
+  background-color: #BA0000;
+}
+
+.navbar-red ul.navbar-nav>li>a:hover {
+  background-color: #BA0000;
+}
+
+.navbar-red ul.navbar-nav>li.dropdown.open>a {
   background-color: #242424;
 }
 
 .navbar-red ul.navbar-nav>li.dropdown>a::after {
-		content: url("../img/down-arrow.png");
-		margin-left: 5px;
-	 }
+  content: url("../img/down-arrow.png");
+  margin-left: 5px;
+}
+
 .navbar-brand {
   padding: 0px;
   padding-left: 15px;
 }
+
 .navbar-brand>img {
   height: 100%;
   padding: 15px;
   width: auto;
 }
-.dropdown-menu{
-  min-width:auto;
+
+.dropdown-menu {
+  min-width: auto;
   border-radius: 0px;
   border: none;
-  width:100%;
+  width: 100%;
 }
+
 .top-navbar {
   height: 80px;
   position: fixed !important;
@@ -73,22 +88,25 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
   margin-right: auto;
   border-radius: 0px;
 }
-.submenu{
+
+.submenu {
   padding: 0px;
   background-color: #474747;
 }
-.submenu-list{
+
+.submenu-list {
   background-color: #474747;
   margin: 0;
-  font-family: "Asap",Helvectica,Arial,sans-serif;
-  padding:0px;
+  font-family: "Asap", Helvectica, Arial, sans-serif;
+  padding: 0px;
   font-size: 15px;
 }
-.submenu-list>ul{
-  margin:0;
-  padding:0;
 
+.submenu-list>ul {
+  margin: 0;
+  padding: 0;
 }
+
 .submenu-list>ul>li {
   list-style-type: none;
   padding: 5px;
@@ -98,94 +116,112 @@ body {font-family: "Asap",Helvetica,Arial,sans-serif;}
 .submenu-list>ul>li.active {
   background-color: #242424;
 }
+
 .submenu-list>ul>li.active>a::after {
   content: url("../img/down-arrow.png");
   position: absolute;
   margin: 7px;
   display: inline-block;
-   transform: rotate(270deg);
+  transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
 }
-.submenu-list>ul>li>a,.section-articles>ul.articles-list>li a {
+
+.submenu-list>ul>li>a,
+.section-articles>ul.articles-list>li a {
   font-family: "Asap", Helvetica, sans-serif;
   text-transform: none;
-  font-size:15px;
+  font-size: 15px;
   color: white;
   font-weight: bold;
 }
-.submenu-list>ul>li>a{
+
+.submenu-list>ul>li>a {
   padding: 0 22px;
 }
 
+
 /**--- SUBMENU THUMBNAIL PREVIEW ---**/
-.section-articles{
-    background-color: #242424;
+
+.section-articles {
+  background-color: #242424;
 }
-.section-articles>ul.articles-list>li{
+
+.section-articles>ul.articles-list>li {
   padding: 20px;
 }
-.section-articles>ul.articles-list>li a{
+
+.section-articles>ul.articles-list>li a {
   margin: 0px;
 }
 
+
 /** SECONDARY MENU **/
-.secondary-menu{
-  background:url("../img/mais-acessados-bg.png") no-repeat;
+
+.secondary-menu {
+  background: url("../img/mais-acessados-bg.png") no-repeat;
   background-color: #242424;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   padding: 5px;
 }
-.secondary-menu>span.section-title{
+
+.secondary-menu>span.section-title {
   padding-left: 15px;
   padding-right: 35px;
   font-size: 14px;
 }
-.secondary-menu>ul.menu-list{
-   display: inline-block;
+
+.secondary-menu>ul.menu-list {
+  display: inline-block;
   padding: 0px;
   margin: 0px;
 }
-.secondary-menu>.menu-list>li{
+
+.secondary-menu>.menu-list>li {
   list-style-type: none;
   display: inline-block;
 }
-.secondary-menu>.menu-list>li>a{
+
+.secondary-menu>.menu-list>li>a {
   color: white;
   padding: 0px 10px 0px 10px;
 }
+
+
 /*!
  * Yamm!3 - Yet another megamenu for Bootstrap 3
  * http://geedmo.github.com/yamm3
  *
  * @geedmo - Licensed under the MIT license
  */
+
 .yamm .nav,
 .yamm .collapse,
 .yamm .dropup,
 .yamm .dropdown {
   position: static;
 }
+
 .yamm .container {
   position: relative;
 }
+
 .yamm .dropdown-menu {
   left: auto;
 }
+
 .yamm .yamm-content {
   padding: 20px 30px;
 }
+
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 0;
   right: 0;
 }
 
-.content{
-  padding-top: 210px;
-}
-@media (max-width: 990px) {
-
+.content {
+  padding-top: 220px;
 }
