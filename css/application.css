@@ -4,21 +4,32 @@ body {
   font-family: "Asap", Helvetica, Arial, sans-serif;
 }
 
-.ads-banner {
+.ads-container {
   position: fixed;
-  text-align: center;
   padding: 5px;
   background-color: #e6e6e6;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 900;
 }
 
-.ads-banner img {
-  display: block;
-  margin: auto;
+.ads-container .ad-banner {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.top-navbar {
-  font-family: "Dosis", Helvetica, Arial, sans-serif;
-  top: 100px;
+.main-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-highlights [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .navbar-red {
@@ -79,6 +90,8 @@ body {
 }
 
 .top-navbar {
+  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  top: 100px;
   height: 80px;
   position: fixed !important;
   max-width: 1320px;
@@ -87,6 +100,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 0px;
+  z-index: 900;
 }
 
 .submenu {
